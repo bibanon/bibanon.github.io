@@ -1,0 +1,116 @@
+// Welcome to Compass.
+// In this file you should write your main styles. (or centralize your imports)
+// Import this file using the following HTML or equivalent:
+// <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass
+
+// variables
+//
+$mobile-width: 45rem
+$body_padding: 1rem 1rem
+$standard_font_family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif
+$reading_font_family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif
+$content_font_family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+// Media queries
+//
+@mixin respond-to($media)
+    @if $media == desktop
+        @media only screen and (min-width: $mobile-width)
+            @content
+    @else if $media == mobile
+        @media only screen and (max-width: $mobile-width)
+            @content
+
+// styling
+//
+
+*
+    @include box-sizing(border-box)
+
+// table stuff
+html, body
+    font-family: $standard_font_family
+    height: 100%
+    background: #f7f8fc
+    @include background(linear-gradient(lighten(#f7f8fc, 3%), darken(#f7f8fc, 6%)))
+    background-attachment: fixed
+    background-size: cover
+
+.page-header
+    display: block
+    border-bottom: 0.18rem solid #8ca4de
+    background: #fff
+    .logo
+        display: block
+        padding: 0.8rem 0
+        margin: 0 auto
+        max-width: 90%
+
+.logos
+    padding: 2rem 0
+    text-align: center
+    font-size: 1.1rem
+    > div
+        display: inline-block
+    a
+        display: inline-block
+        padding-right: 2rem
+        text-decoration: none
+        color: #223
+        &:last-child
+            padding-right: none
+        img
+            display: block
+            padding: 0.5rem
+
+.projects
+    background: #fff
+    border: 0.18rem solid #6c8bd4
+    border-radius: 0.25rem
+    margin: 0 auto
+    max-width: 40rem
+    @include respond-to(mobile)
+        max-width: 90%
+    .project
+        display: block
+        padding: 1.2rem 1.3rem 1.5rem
+        border-bottom: 0.18rem solid #6c8bd4
+        color: #223
+        text-decoration: none
+        @include single-transition(background, 0.2s)
+        &:last-child
+            border-bottom: none
+        &:hover
+            background: darken(#f7f8fc, 2%)
+        h1
+            font-size: 2rem
+            margin-bottom: 0.4rem
+
+// sticky footer stuff
+.wrapper
+    min-height: 100%
+    margin: 0 auto -3rem
+    @include respond-to(mobile)
+        margin-bottom: -4rem
+    padding-bottom: 5rem
+
+.footer
+    height: 3rem
+    @include respond-to(mobile)
+        height: 4rem
+    padding: 0.5rem
+    text-align: center
+    font-size: 0.8rem
+    line-height: 1.2
+    background: #334
+    color: #f7f7fa
+    a
+        text-decoration: none
+        font-style: italic
+        @include single-transition(color, 0.2s)
+        color: #efefff
+        &:hover
+            color: #ccf

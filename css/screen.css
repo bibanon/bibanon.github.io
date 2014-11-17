@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  height: 100%;
+  background: #f7f8fc;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e1e5f4));
+  background: -webkit-linear-gradient(#ffffff, #e1e5f4);
+  background: -moz-linear-gradient(#ffffff, #e1e5f4);
+  background: -o-linear-gradient(#ffffff, #e1e5f4);
+  background: linear-gradient(#ffffff, #e1e5f4);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.page-header {
+  display: block;
+  border-bottom: 0.18rem solid #8ca4de;
+  background: white;
+}
+.page-header .logo {
+  display: block;
+  padding: 0.8rem 0;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.logos {
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.logos > div {
+  display: inline-block;
+}
+.logos a {
+  display: inline-block;
+  padding-right: 2rem;
+  text-decoration: none;
+  color: #222233;
+}
+.logos a:last-child {
+  padding-right: none;
+}
+.logos a img {
+  display: block;
+  padding: 0.5rem;
+}
+
+.projects {
+  background: white;
+  border: 0.18rem solid #6c8bd4;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  max-width: 40rem;
+}
+@media only screen and (max-width: 45rem) {
+  .projects {
+    max-width: 90%;
+  }
+}
+.projects .project {
+  display: block;
+  padding: 1.2rem 1.3rem 1.5rem;
+  border-bottom: 0.18rem solid #6c8bd4;
+  color: #222233;
+  text-decoration: none;
+  -webkit-transition: background 0.2s;
+  -moz-transition: background 0.2s;
+  -o-transition: background 0.2s;
+  transition: background 0.2s;
+}
+.projects .project:last-child {
+  border-bottom: none;
+}
+.projects .project:hover {
+  background: #f0f2f9;
+}
+.projects .project h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -3rem;
+  padding-bottom: 5rem;
+}
+@media only screen and (max-width: 45rem) {
+  .wrapper {
+    margin-bottom: -4rem;
+  }
+}
+
+.footer {
+  height: 3rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  background: #333344;
+  color: #f7f7fa;
+}
+@media only screen and (max-width: 45rem) {
+  .footer {
+    height: 4rem;
+  }
+}
+.footer a {
+  text-decoration: none;
+  font-style: italic;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+  color: #efefff;
+}
+.footer a:hover {
+  color: #ccccff;
+}
