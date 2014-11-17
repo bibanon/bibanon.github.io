@@ -86,12 +86,13 @@ html, body {
 }
 
 .logos {
-  padding: 2rem 0;
+  padding: 2rem 0 1rem;
   text-align: center;
   font-size: 1.1rem;
 }
 .logos > div {
   display: inline-block;
+  padding-bottom: 1rem;
 }
 .logos > div:first-child a:first-child {
   margin-left: none;
