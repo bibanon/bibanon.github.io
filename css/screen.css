@@ -95,12 +95,12 @@ html, body {
 }
 .logos a {
   display: inline-block;
-  padding-right: 2rem;
+  margin-right: 2rem;
   text-decoration: none;
   color: #222233;
 }
 .logos a:last-child {
-  padding-right: none;
+  margin-right: none;
 }
 .logos a img {
   display: block;
