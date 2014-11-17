@@ -126,12 +126,20 @@ html, body {
 }
 .post a {
   text-decoration: none;
-  color: #222233;
+  color: #1240aa;
+  font-style: italic;
 }
 .post h1 {
   font-size: 2rem;
   margin-bottom: 0.1rem;
   color: #1240aa;
+  font-style: normal;
+}
+.post p {
+  margin-bottom: 1rem;
+}
+.post strong {
+  font-weight: bold;
 }
 
 .projects {
