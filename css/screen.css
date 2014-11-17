@@ -107,17 +107,35 @@ html, body {
   padding: 0.5rem;
 }
 
-.projects {
+.projects, .post {
   background: white;
   border: 0.18rem solid #6c8bd4;
   border-radius: 0.25rem;
-  margin: 0 auto;
   max-width: 40rem;
 }
 @media only screen and (max-width: 45rem) {
-  .projects {
+  .projects, .post {
     max-width: 90%;
   }
+}
+
+.post {
+  margin: 2rem auto;
+  padding: 1.2rem 1.4rem;
+  line-height: 1.2;
+}
+.post a {
+  text-decoration: none;
+  color: #222233;
+}
+.post h1 {
+  font-size: 2rem;
+  margin-bottom: 0.1rem;
+  color: #1240aa;
+}
+
+.projects {
+  margin: 0 auto;
 }
 .projects .project {
   display: block;
@@ -125,6 +143,7 @@ html, body {
   border-bottom: 0.18rem solid #6c8bd4;
   color: #222233;
   text-decoration: none;
+  line-height: 1.2;
   -webkit-transition: background 0.2s;
   -moz-transition: background 0.2s;
   -o-transition: background 0.2s;
@@ -138,7 +157,8 @@ html, body {
 }
 .projects .project h1 {
   font-size: 2rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.1rem;
+  color: #06266f;
 }
 
 .wrapper {

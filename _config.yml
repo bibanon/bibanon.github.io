@@ -3,5 +3,7 @@ exclude:
   - config.rb
   - .sass-cache
 
+permalink: none
+
 highlighter: pygments
 markdown: rdiscount

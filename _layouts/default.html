@@ -39,6 +39,7 @@
             <a class="page-header" href=".">
                 <img class="logo" title="Bibliotheca Anonoma" src="img/wordmark.svg">
             </a>
+            {% if page.logos %}
             <div class="logos">
                 <div>
                     <a class="wiki" title="Wiki" href="https://github.com/bibanon/bibanon/wiki">
@@ -61,6 +62,7 @@
                     </a>
                 </div>
             </div>
+            {% endif %}
             {{ content }}
         </div>
         <div class="footer">

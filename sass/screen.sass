@@ -66,20 +66,35 @@ html, body
             display: block
             padding: 0.5rem
 
-.projects
+.projects, .post
     background: #fff
     border: 0.18rem solid #6c8bd4
     border-radius: 0.25rem
-    margin: 0 auto
     max-width: 40rem
     @include respond-to(mobile)
         max-width: 90%
+
+.post
+    margin: 2rem auto
+    padding: 1.2rem 1.4rem
+    line-height: 1.2
+    a
+        text-decoration: none
+        color: #223
+    h1
+        font-size: 2rem
+        margin-bottom: 0.1rem
+        color: rgb(18, 64, 170)
+
+.projects
+    margin: 0 auto
     .project
         display: block
         padding: 1.2rem 1.3rem 1.5rem
         border-bottom: 0.18rem solid #6c8bd4
         color: #223
         text-decoration: none
+        line-height: 1.2
         @include single-transition(background, 0.2s)
         &:last-child
             border-bottom: none
@@ -87,7 +102,8 @@ html, body
             background: darken(#f7f8fc, 2%)
         h1
             font-size: 2rem
-            margin-bottom: 0.4rem
+            margin-bottom: 0.1rem
+            color: #06266F
 
 // sticky footer stuff
 .wrapper

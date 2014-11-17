@@ -1,13 +1,14 @@
 ---
 layout: default
 title: Bibliotheca Anonoma
+logos: true
 ---
 
 <div class="projects">
 {% for post in site.posts reversed %}
     <a class="project" title="{{ post.title }}" href="{{ post.link }}">
         <h1>{{ post.title }}</h1>
-        {{ post.content }}
+        {{ post.exerpt }}
     </a>
 {% endfor %}
 </div>
