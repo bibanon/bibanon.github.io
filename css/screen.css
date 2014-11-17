@@ -93,16 +93,19 @@ html, body {
 .logos > div {
   display: inline-block;
 }
-.logos a {
-  display: inline-block;
-  margin-right: 2rem;
-  text-decoration: none;
-  color: #222233;
+.logos > div:first-child a:first-child {
+  margin-left: none;
 }
-.logos a:last-child {
+.logos > div:last-child a:last-child {
   margin-right: none;
 }
-.logos a img {
+.logos > div a {
+  display: inline-block;
+  text-decoration: none;
+  color: #222233;
+  margin: 0 1rem;
+}
+.logos > div a img {
   display: block;
   padding: 0.5rem;
 }

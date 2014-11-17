@@ -55,16 +55,18 @@ html, body
     font-size: 1.1rem
     > div
         display: inline-block
-    a
-        display: inline-block
-        margin-right: 2rem
-        text-decoration: none
-        color: #223
-        &:last-child
+        &:first-child a:first-child
+            margin-left: none
+        &:last-child a:last-child
             margin-right: none
-        img
-            display: block
-            padding: 0.5rem
+        a
+            display: inline-block
+            text-decoration: none
+            color: #223
+            margin: 0 1rem
+            img
+                display: block
+                padding: 0.5rem
 
 .projects, .post
     background: #fff
