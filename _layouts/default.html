@@ -42,8 +42,7 @@
             <a class="page-header" href=".">
                 <img class="logo" title="Bibliotheca Anonoma" src="img/wordmark.svg">
             </a>
-            {% if page.logos %}
-            <div class="logos">
+            <div class="logos{% if page.small_logos %} small{% endif %}">
                 <div>
                     <a class="wiki" title="Wiki" href="https://github.com/bibanon/bibanon/wiki">
                         <img src="img/logo-wiki.svg">
@@ -59,13 +58,12 @@
                         <img src="img/logo-tools.svg">
                         tools
                     </a>
-                    <a class="blog" title="Blog" href="https://github.com/bibanon">
+                    <a class="blog" title="Blog" href="http://blog.bibanon.org">
                         <img src="img/logo-blog.svg">
                         blog
                     </a>
                 </div>
             </div>
-            {% endif %}
             {{ content }}
         </div>
         <div class="footer">

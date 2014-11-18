@@ -110,6 +110,14 @@ html, body {
   display: block;
   padding: 0.5rem;
 }
+.logos.small {
+  padding: 1rem 0 0;
+  font-size: 0;
+}
+.logos.small > div a img {
+  padding: 0;
+  max-height: 2.5rem;
+}
 
 .projects, .post {
   background: white;
@@ -124,7 +132,7 @@ html, body {
 }
 
 .post {
-  margin: 2rem auto;
+  margin: 0 auto;
   padding: 1.2rem 1.4rem;
   line-height: 1.2;
 }
